@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBIRA Toyota - Issue Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        .accent-orange {
+            color: #e74c3c;
+        }
+        .hero-text {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">eBIRA</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">eBIRA Toyota</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition">Features</a>
+                    <a href="#tech" class="text-gray-600 hover:text-blue-600 transition">Technology</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="hero-text">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Electronic <span class="accent-orange">Bira</span> Form
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                        A cloud-based issue management system designed for automotive manufacturing companies' engineering teams to efficiently record, track, and resolve production line issues.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg transition transform hover:scale-105">
+                            Login
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden md:flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-orange-500 rounded-3xl transform rotate-6 opacity-20"></div>
+                        <img src="hero_1.webp" alt="eBIRA Form" class="relative rounded-3xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    The <span class="accent-orange">Background</span>
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="hero_2.webp" alt="Background" class="rounded-2xl shadow-lg">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Why eBIRA?</h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-blue-600 mb-3">Main Issue</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            PE Members were using paper-based problem lists (Bira Problem) for every confirmation activity except SE Activity (DA). Even at the KS stage, problems were picked up using paper before sorting and registering to the Monren system.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold text-blue-600 mb-4">Key Challenges</h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="accent-orange font-bold mr-3">•</span>
+                                <span>Hand writing cases with characters difficult to read</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="accent-orange font-bold mr-3">•</span>
+                                <span>Time-consuming problem illustration and prone to misunderstanding</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="accent-orange font-bold mr-3">•</span>
+                                <span>Cannot update problems in real-time across overseas plants</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="accent-orange font-bold mr-3">•</span>
+                                <span>Inflexible stationery management at trial areas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="accent-orange font-bold mr-3">•</span>
+                                <span>Lack of awareness on progress and deadline tracking</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Key <span class="accent-orange">Features</span>
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cloud text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cloud-Based</h3>
+                    <p class="text-gray-600">Access issue management from anywhere, anytime with secure cloud infrastructure.</p>
+                </div>
+
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tasks text-orange-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Real-Time Tracking</h3>
+                    <p class="text-gray-600">Monitor issue status and progress across all production lines in real-time.</p>
+                </div>
+
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Team Collaboration</h3>
+                    <p class="text-gray-600">Seamless communication and coordination between engineering teams.</p>
+                </div>
+
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Analytics & Reports</h3>
+                    <p class="text-gray-600">Comprehensive insights and reporting on issue trends and resolutions.</p>
+                </div>
+
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-lock text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Secure & Reliable</h3>
+                    <p class="text-gray-600">Enterprise-grade security with data protection and backup systems.</p>
+                </div>
+
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile Friendly</h3>
+                    <p class="text-gray-600">Responsive design works seamlessly on all devices and screen sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="tech" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Technology <span class="accent-orange">Stack</span>
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-4xl mb-4">🔧</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">.NET Core 9</h3>
+                    <p class="text-gray-600 text-sm">Robust backend framework</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-4xl mb-4">⚛️</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">React.js</h3>
+                    <p class="text-gray-600 text-sm">Modern frontend library</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Material UI</h3>
+                    <p class="text-gray-600 text-sm">Beautiful UI components</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-4xl mb-4">🗄️</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">PostgreSQL</h3>
+                    <p class="text-gray-600 text-sm">Reliable database</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-4 md:py-8">
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold mb-4">eBIRA</h3>
+                    <p class="text-sm">Issue management cloud application for automotive manufacturing companies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-center text-sm"> 2024 eBIRA. All rights reserved. | Developed by <a href="https://rstehnologi.com" class="text-blue-400 hover:text-blue-300 transition">RS Teknologi</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
